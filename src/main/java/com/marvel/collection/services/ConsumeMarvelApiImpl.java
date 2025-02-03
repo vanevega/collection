@@ -14,8 +14,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class ConsumeMarvelApiImpl implements ConsumeMarvelApi {
 
-     @Value("${api_marvel}")
-    private String api_marvel;
+    @Value("${api_marvel}")
+    public String api_marvel;
 
     @Override
     public String getAllCharacters(String apiKey) throws URISyntaxException, IOException, InterruptedException  {
